@@ -35,22 +35,166 @@ header div nav ul li a:hover {
   gap: 16px;
   align-items: center;
 }
-.header-right-icons{
-    font-size: 20px;
+.header-right-icons {
+  font-size: 20px;
 }
 
 .input-wrapper {
   display: inline-block;
   position: relative;
 }
-.input-wrapper input{
-    padding: 13px;
+.input-wrapper input {
+  padding: 13px;
 }
 
-.input-wrapper:after{
-    font-family: 'FontAwesome';
-    content: '\f002';
-    position: absolute;
-    right: 12px;
-    top: 15px;
+.input-wrapper:after {
+  font-family: "FontAwesome";
+  content: "\f002";
+  position: absolute;
+  right: 12px;
+  top: 15px;
+}
+
+.movie-top-info {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.movie-top-info .left {
+  display: flex;
+  gap: 16px;
+}
+
+.stars .full {
+  color: red;
+}
+
+.movie-top-info span .imdb {
+  color: gray;
+}
+
+.age .yas {
+  margin-left: 15px;
+  border: solid 2px black;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 4px;
+}
+
+.time-info {
+  margin-left: 32px;
+}
+.movie-description {
+  max-width: 50%;
+}
+.movie-bottom-info {
+  display: flex;
+  flex-direction: column;
+}
+.movie-bottom-info span {
+  color: #ff0000;
+  margin-bottom: 5px;
+}
+.movie-bottom-info span.gray-text {
+  color: black;
+}
+.play {
+  background-color: #ff0000;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.play:hover {
+  transition: 0.3s;
+  background-color: white;
+  border: solid 1px;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.movies-list .top {
+  display: flex;
+  justify-content: space-between;
+}
+.movies {
+  display: flex;
+  justify-content: space-between;
+}
+.movies-content {
+  border: 2px solid;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-right: 100px;
+  padding-left: 10px;
+}
+.info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.yas2 {
+  font-size: 10px;
+  border: 1px solid;
+  padding: 1px 5px;
+  border-radius: 5px;
+  align-items: center;
+}
+.hours {
+  font-size: 12px;
+  font-weight: bold;
+}
+.movies-content .play {
+  margin-top: 14px;
+}
+.movies-list-recommended {
+  margin-top: 25px;
+}
+
+footer {
+  margin-top: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+footer .footer-one .up-link {
+  display: flex;
+  gap: 40px;
+}
+.up-link a {
+  text-decoration: none;
+  color: black;
+}
+.up-link a:hover {
+  color: gray;
+}
+.lorem {
+  display: flex;
+  padding-top: 20px;
+  max-width: 500px;
+}
+.image-link{
+  display: flex;
+  margin-top: 13px;
+  gap: 10px;
+}
+.footer-middle img {
+  height: auto;
+  width: 40px;
+  border-radius: 20px;
+}
+.apps{
+  margin-left: 30px;
+}
+.apps-img{
+  display: flex;
+  margin-top: 13px;
+  gap: 20px;
+}
+
+.apps-img img{
+  height: auto;
+  width: 150px;
+  border-radius: 14px
 }

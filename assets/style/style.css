@@ -117,10 +117,12 @@ header div nav ul li a:hover {
 .movies-list .top {
   display: flex;
   justify-content: space-between;
+  max-width: 50%;
 }
 .movies {
   display: flex;
   justify-content: space-between;
+  max-width: 50%;
 }
 .movies-content {
   border: 2px solid;

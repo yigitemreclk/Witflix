@@ -100,7 +100,7 @@ header div nav ul li a:hover {
 }
 .play {
   background-color: #ff0000;
-  border: none;
+  border: solid 1px transparent;
   padding: 12px 24px;
   cursor: pointer;
   border-radius: 10px;
@@ -113,23 +113,30 @@ header div nav ul li a:hover {
   cursor: pointer;
   border-radius: 10px;
 }
+.container{
+  display: flex;
+  width: 800px;
+  flex-direction: column;
+}
 
 .movies-list .top {
   display: flex;
   justify-content: space-between;
-  max-width: 50%;
 }
 .movies {
   display: flex;
   justify-content: space-between;
-  max-width: 50%;
+  width: 100%;
+  gap: 20px;
 }
 .movies-content {
+  display: flex;
   border: 2px solid;
-  padding-top: 5px;
-  padding-bottom: 10px;
-  padding-right: 100px;
-  padding-left: 10px;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
 }
 .info {
   display: flex;

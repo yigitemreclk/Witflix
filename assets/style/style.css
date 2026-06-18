@@ -1,209 +1,251 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 body {
-  margin: 0;
-  padding: 16px;
-  font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 16px;
+    font-family: "Inter", sans-serif;
 }
 
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.container {
+    max-width: 900px;
+    margin: 0 auto;
 }
+
+.fluid-container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+
 .logo {
-  color: #ff0000;
+    color: #FF0000;
+    font-family: "Inter", sans-serif;
 }
 
-header div nav ul {
-  list-style: none;
-  display: flex;
-  gap: 16px;
+header {
+    width: 100%;
 }
 
-header div nav ul li a {
-  text-decoration: none;
-  color: black;
+header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
-header div nav ul li a:hover {
-  color: #ff0000;
+
+header nav ul,
+footer nav ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    padding: 0px;
+}
+
+header nav ul li a,
+footer nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav ul li a:hover {
+    color: #FF0000;
 }
 
 .header-right {
-  display: flex;
-  gap: 16px;
-  align-items: center;
+    display: flex;
+    gap: 8px;
+    align-items: center;
 }
+
+.search-wrapper {
+    display: inline-block;
+    position: relative
+}
+
+.search-wrapper input {
+    padding: 12px;
+}
+
+.search-wrapper:after {
+    font-family: 'FontAwesome';
+    content: '\f002';
+    position: absolute;
+    right: 12px;
+    top: 14px;
+}
+
 .header-right-icons {
-  font-size: 20px;
-}
-
-.input-wrapper {
-  display: inline-block;
-  position: relative;
-}
-.input-wrapper input {
-  padding: 13px;
-}
-
-.input-wrapper:after {
-  font-family: "FontAwesome";
-  content: "\f002";
-  position: absolute;
-  right: 12px;
-  top: 15px;
+    font-size: 24px;
 }
 
 .movie-top-info {
-  display: flex;
-  gap: 32px;
-  align-items: center;
+    display: flex;
+    gap: 32px;
 }
+
 .movie-top-info .left {
-  display: flex;
-  gap: 16px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
 }
 
-.stars .full {
-  color: red;
+.gray-text {
+    color: gray;
 }
 
-.movie-top-info span .imdb {
-  color: gray;
+.black-text {
+    color: black;
 }
 
-.age .yas {
-  margin-left: 15px;
-  border: solid 2px black;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-radius: 4px;
+.stars i.full {
+    color: #FF0000;
+}
+
+.age {
+    border: 1px solid #FF0000;
+    color: #FF0000;
+    padding: 4px 8px;
+    border-radius: 4px;
 }
 
 .time-info {
-  margin-left: 32px;
+    align-self: center;
 }
+
 .movie-description {
-  max-width: 50%;
+    max-width: 50%;
 }
-.movie-bottom-info {
-  display: flex;
-  flex-direction: column;
+
+.movie-bottom-info>div {
+    margin-bottom: 8px;
+    color: #FF0000;
+    font-weight: 600;
 }
-.movie-bottom-info span {
-  color: #ff0000;
-  margin-bottom: 5px;
+
+button {
+    background-color: #FF0000;
+    color: white;
+    padding: 12px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    text-align: left;
+    border: 1px solid transparent;
 }
-.movie-bottom-info span.gray-text {
-  color: black;
+
+button:hover {
+    background-color: white;
+    border: 1px solid #FF0000;
+    color: #FF0000;
 }
-.play {
-  background-color: #ff0000;
-  border: solid 1px transparent;
-  padding: 12px 24px;
-  cursor: pointer;
-  border-radius: 10px;
-}
-.play:hover {
-  transition: 0.3s;
-  background-color: white;
-  border: solid 1px;
-  padding: 12px 24px;
-  cursor: pointer;
-  border-radius: 10px;
-}
-.container{
-  display: flex;
-  width: 800px;
-  flex-direction: column;
+
+.single-movie h2 {
+    font-size: 32px;
 }
 
 .movies-list .top {
-  display: flex;
-  justify-content: space-between;
-}
-.movies {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  gap: 20px;
-}
-.movies-content {
-  display: flex;
-  border: 2px solid;
-  padding: 10px;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  gap: 10px;
-}
-.info {
-  display: flex;
-  align-items: center;
-  gap: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.yas2 {
-  font-size: 10px;
-  border: 1px solid;
-  padding: 1px 5px;
-  border-radius: 5px;
-  align-items: center;
-}
-.hours {
-  font-size: 12px;
-  font-weight: bold;
-}
-.movies-content .play {
-  margin-top: 14px;
-}
-.movies-list-recommended {
-  margin-top: 25px;
+.movies-list .top a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
 }
 
-footer {
-  margin-top: 300px;
-  display: flex;
-  justify-content: space-around;
-}
-footer .footer-one .up-link {
-  display: flex;
-  gap: 40px;
-}
-.up-link a {
-  text-decoration: none;
-  color: black;
-}
-.up-link a:hover {
-  color: gray;
-}
-.lorem {
-  display: flex;
-  padding-top: 20px;
-  max-width: 500px;
-}
-.image-link{
-  display: flex;
-  margin-top: 13px;
-  gap: 10px;
-}
-.footer-middle img {
-  height: auto;
-  width: 40px;
-  border-radius: 20px;
-}
-.apps{
-  margin-left: 30px;
-}
-.apps-img{
-  display: flex;
-  margin-top: 13px;
-  gap: 20px;
+.movies-list .item-info {
+    display: flex;
+    gap: 16px;
+    align-items: center;
 }
 
-.apps-img img{
-  height: auto;
-  width: 150px;
-  border-radius: 14px
+.movies-list-content {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.movies-list .item {
+    padding: 32px 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 1px solid black;
+}
+
+/** Footer Styles **/
+.footer.container {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+footer .left {
+    flex: 2;
+}
+
+footer .socials,
+footer .app-links {
+    flex: 1;
+}
+
+footer .socials img {
+    width: 48px;
+}
+
+footer .app-links img {
+    width: 150px;
+}
+
+footer .app-link-content {
+    display: flex;
+    gap: 16px;
+}
+
+/* Responsive CSS */
+@media only screen and (max-width: 600px) {
+    .header-content nav {
+        order: 3;
+        flex: 1;
+    }
+
+    .search-wrapper input {
+        width: 100px;
+    }
+
+    .movie-description {
+        max-width: 100%;
+    }
+
+    .stars i {
+        font-size: 12px;
+    }
+
+    .footer.container {
+        flex-direction: column;
+    }
+
+    footer .socials,
+    footer .app-links {
+        text-align: center;
+    }
+
+    footer .app-link-content {
+        justify-content: center;
+    }
+
+    header nav ul,
+    footer nav ul {
+        justify-content: center;
+    }
 }

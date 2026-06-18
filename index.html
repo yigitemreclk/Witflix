@@ -1,192 +1,174 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="tr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Witflix</title>
-    <link rel="stylesheet" href="./assets/style/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="header-content">
-        <h1 class="logo">WitFlix</h1>
 
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Movies</a></li>
-            <li><a href="#">TV Shows</a></li>
-            <li><a href="#">TV Shows</a></li>
-          </ul>
-        </nav>
-        <div class="header-right">
-          <div class="input-wrapper">
-            <input type="text" placeholder="Search" />
-          </div>
-          <i class="fa-solid fa-bell header-right-icons"></i>
-          <i class="fa-solid fa-circle-user header-right-icons"></i>
+<head>
+    <title>WitFlix</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="container">
+        <div class="header-content">
+            <h1 class="logo">WitFlix</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="search-wrapper">
+                    <input type="text" placeholder="Search" />
+                </div>
+                <i class="fa-solid fa-bell header-right-icons"></i>
+                <i class="fa-regular fa-circle-user header-right-icons"></i>
+            </div>
         </div>
-      </div>
     </header>
 
-    <div class="single-movie">
-      <h2>MOVIE NAME</h2>
-      <div class="movie-top-info">
+    <div class="single-movie container">
+        <h2>Movie Name</h2>
+        <div class="movie-top-info">
+            <div class="left">
+                <div class="stars">
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star full"></i>
+                    <i class="fa-solid fa-star empty"></i>
+                </div>
+                <span>7.3 <span class="gray-text">IMDB</span></span>
+            </div>
+            <div class="age">16+</div>
+            <div class="time-info">2h 21 min</div>
+        </div>
+        <div class="movie-description">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the
+                librarian at St Bride Printing Library, took a 1914 Cicero translation and scrambled it to make dummy
+                text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and
+                more recently with desktop publishing software including versions of Lorem Ipsum.</p>
+        </div>
+        <div class="movie-bottom-info">
+            <div>Starring: <span class="black-text">John Doe</span></div>
+            <div>Genre: <span class="black-text">John Doe</span></div>
+            <div>Tags: <span class="black-text">John Doe</span></div>
+        </div>
+        <button class="play"><i class="fa-solid fa-play"></i> Play</button>
+    </div>
+    <!--Popular Movies-->
+    <div class="movies-list container">
+        <div class="top">
+            <h2>Popular Movies</h2>
+            <a href="#">View All</a>
+        </div>
+        <div class="movies-list-content">
+            <div class="item">
+                <h3>Movie Name</h3>
+                <div class="item-info">
+                    <div class="age">16+</div>
+                    <div class="time-info">2h 21 min</div>
+                </div>
+                <button class="play"><i class="fa-solid fa-play"></i> Play</button>
+            </div>
+            <div class="item">
+                <h3>Movie Name</h3>
+                <div class="item-info">
+                    <div class="age">16+</div>
+                    <div class="time-info">2h 21 min</div>
+                </div>
+                <button class="play"><i class="fa-solid fa-play"></i> Play</button>
+            </div>
+            <div class="item">
+                <h3>Movie Name</h3>
+                <div class="item-info">
+                    <div class="age">16+</div>
+                    <div class="time-info">2h 21 min</div>
+                </div>
+                <button class="play"><i class="fa-solid fa-play"></i> Play</button>
+            </div>
+        </div>
+    </div>
+    <!--Recommended Movies-->
+    <div class="movies-list container">
+        <div class="top">
+            <h2>Recommended For You</h2>
+            <a href="#">View All</a>
+        </div>
+        <div class="movies-list-content">
+            <div class="item">
+                <h3>Movie Name</h3>
+                <div class="item-info">
+                    <div class="age">16+</div>
+                    <div class="time-info">2h 21 min</div>
+                </div>
+                <button class="play"><i class="fa-solid fa-play"></i> Play</button>
+            </div>
+            <div class="item">
+                <h3>Movie Name</h3>
+                <div class="item-info">
+                    <div class="age">16+</div>
+                    <div class="time-info">2h 21 min</div>
+                </div>
+                <button class="play"><i class="fa-solid fa-play"></i> Play</button>
+            </div>
+            <div class="item">
+                <h3>Movie Name</h3>
+                <div class="item-info">
+                    <div class="age">16+</div>
+                    <div class="time-info">2h 21 min</div>
+                </div>
+                <button class="play"><i class="fa-solid fa-play"></i> Play</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer container">
         <div class="left">
-          <div class="stars">
-            <i class="fa-solid fa-star full"></i>
-            <i class="fa-solid fa-star full"></i>
-            <i class="fa-solid fa-star full"></i>
-            <i class="fa-solid fa-star full"></i>
-            <i class="fa-solid fa-star"></i>
-          </div>
-          <span>7.3 <span class="imdb">IMDB</span></span>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                </ul>
+            </nav>
+            <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry,
+            is simply dummy text of the printing and typesetting industry
+        is simply dummy text of the printing and typesetting industry
+    is simply dummy text of the printing and typesetting industry
+is simply dummy text of the printing and typesetting industry</p>
         </div>
-        <div class="age">
-          <span class="yas">16+</span>
-          <span class="time-info">2h 21min</span>
-        </div>
-      </div>
-
-      <div class="movie-description">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla illum
-          illo quas nisi eaque aliquam ipsam, laudantium reprehenderit
-          repudiandae dolorum saepe delectus dolorem eum labore similique, velit
-          recusandae obcaecati commodi alias! Saepe quae aut voluptate cumque
-          ipsam, officiis vero quod laboriosam totam voluptatum perferendis.
-          Aliquam voluptatibus tenetur, consequatur voluptatum architecto quam
-          ea eos nulla possimus dicta commodi rerum sequi perferendis.
-        </p>
-      </div>
-      <div class="movie-bottom-info">
-        <span>Starring: <span class="gray-text">Lorem ipsum, Lorem picsum</span></span>
-        <span>Genre: <span class="gray-text">Lorem ipsum, Lorem picsum</span></span>
-        <span>Tags: <span class="gray-text">Lorem ipsum, Lorem picsum</span></span>
-      </div>
-      <button class="play"><i class="fa-solid fa-play"></i>Play Now</button>
-    </div>
-    <div class="container">
-    <!-- popular-movies -->
-    <div class="movies-list">
-      <div class="top">
-        <h4>Popular Movies</h4>
-        <h4>View All</h4>
-        </div>
-        <div class="movies">
-          <div class="movies-content">
-            <h3>MOVIE NAME</h3>
-            <div class="info">
-            <span class="yas2">16+</span>
-            <span class="hours">2 h 21 min</span> 
+        <div class="socials">
+            <span>Follow Us</span>
+            <div class="social-icons">
+                <a href="#"><img src="./assets/images/image.png" alt="Facebook"></a>
+                <a href="#"><img src="./assets/images/image copy.png" alt="Twitter"></a>
+                <a href="#"><img src="./assets/images/image copy 2.png" alt="Youtube"></a>
             </div>
-            <button class="play"><i class="fa-solid fa-play"></i>Play Now</button>
-            
-          </div>
-          <div class="movies-content">
-            <h3>MOVIE NAME</h3>
-            <div class="info">
-            <span class="yas2">16+</span>
-            <span class="hours">2 h 21 min</span> 
+        </div>
+        <div class="app-links">
+            <div>Apps</div>
+            <div class="app-link-content">
+                <a href="#"><img src="./assets/images/image copy 4.png" alt="Google Play"></a>
+                <a href="#"><img src="./assets/images/image copy 3.png" alt="App Store"></a>
             </div>
-            <button class="play"><i class="fa-solid fa-play"></i>Play Now</button>
-            
-          </div>
-          <div class="movies-content">
-            <h3>MOVIE NAME</h3>
-            <div class="info">
-            <span class="yas2">16+</span>
-            <span class="hours">2 h 21 min</span> 
-            </div>
-            <button class="play"><i class="fa-solid fa-play"></i>Play Now</button>
-            
-          </div>
         </div>
-      </div>
-    <!-- recommended-movies -->
-    <div class="movies-list-recommended">
-      <div class="movies-list">
-      <div class="top">
-        <h4>Recommended Movies</h4>
-        <h4>View All</h4>
-        </div>
-        <div class="movies">
-          <div class="movies-content">
-            <h3>MOVIE NAME</h3>
-            <div class="info">
-            <span class="yas2">16+</span>
-            <span class="hours">2 h 21 min</span> 
-            </div>
-            <button class="play"><i class="fa-solid fa-play"></i>Play Now</button>
-            
-          </div>
-          <div class="movies-content">
-            <h3>MOVIE NAME</h3>
-            <div class="info">
-            <span class="yas2">16+</span>
-            <span class="hours">2 h 21 min</span> 
-            </div>
-            <button class="play"><i class="fa-solid fa-play"></i>Play Now</button>
-            
-          </div>
-          <div class="movies-content">
-            <h3>MOVIE NAME</h3>
-            <div class="info">
-            <span class="yas2">16+</span>
-            <span class="hours">2 h 21 min</span> 
-            </div>
-            <button class="play"><i class="fa-solid fa-play"></i>Play Now</button>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="zero">
-
-    </div>
-    <footer>
-      <div class="footer-one">
-        <div class="up-link">
-        <span><a href="#">Term Of Use</a></span>
-        <span><a href="#">Privacy-Policy</a></span>
-        <span><a href="#">FAQ</a></span>
-        <span><a href="#">Watch List</a></span>
-      </div>
-      <div class="lorem">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aliquid unde sapiente quibusdam officiis perspiciatis nam dolor accusantium vel voluptas fugiat, praesentium aspernatur laudantium illum quidem eligendi harum! Laboriosam, ipsam.</p>
-      </div>
-      </div>
-      <div class="footer-middle">
-        <div class="follow-text">
-          <span>Follow Us</span>
-        </div>
-        <div class="image-link">
-        <a href="#" target="_blank"><img src="./assets/images/image.png" alt="Facebook"></a>
-        <a href="#" target="_blank"><img src="./assets/images/image copy 2.png" alt="Youtube"></a>
-        <a href="#" target="_blank"><img src="./assets/images/image copy.png" alt="Twitter"></a>
-        </div>
-      </div>
-      <div class="apps">
-        <div class="apps-text">
-          <span>Apps</span>
-        </div>
-        <div class="apps-img">
-        <a href="#" target="_blank"><img src="./assets/images/image copy 3.png" alt="App Store"></a>
-        <a href="#" target="_blank"><img src="./assets/images/image copy 4.png" alt="Google Play"></a>
-       </div>  
-      </div>
     </footer>
-    
-  </body>
+
+</body>
+
 </html>
